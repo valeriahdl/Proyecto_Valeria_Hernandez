@@ -4,15 +4,13 @@
     {% load static %}
     
         {% block contenidoQueCambia %}
-        <head> 
-                <title>Boletos|SorteoTique</title>
+
+        <head>
+            <div class="formContactClient">
+                {% block contactClient %}
+                {% endblock %}
+            </div><b>      
         </head>
-        <div class="card" style="width: 18rem;"> 
-        <div class="card-body">
-            <h5 class="card-title">Espéralo pronto</h5>
-            <p class="card-text" >Estamos trabajando en mejorar la experiencia de compra.</p>
-            <!--a href="#" class="btn btn-primary">Contactar</a-->
-        </div>
         </div>
 
         {% endblock %}

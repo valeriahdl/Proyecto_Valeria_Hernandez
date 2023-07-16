@@ -28,6 +28,7 @@ urlpatterns = [
     path("templateTest/", templateTest),
     path('about/', about, name ="About"),
     path('SorteoTique/', include('SorteoTique.urls')),
+    path('TiqueExito/', include('TiqueExito.urls')),
 
 ]
 
