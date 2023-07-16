@@ -1,0 +1,16 @@
+<div>
+    {% load static %}
+    
+    {% block contactClient %}
+    <head>
+        <link rel="icon" href="https://live.staticflickr.com/65535/53048863405_40320fc55d_c.jpg" type="image/x-icon">
+            <title>Editar|SorteoTique</title>
+    </head>
+    <form action="" method="post"> {% csrf_token %}
+        <table>
+            {{ myForm.as_table }}
+        </table>
+        <input class="btn btn-primary" type="submit" value="Enviar">
+    </form>
+    {% endblock %} 
+</div>

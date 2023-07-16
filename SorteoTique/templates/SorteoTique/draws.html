@@ -1,0 +1,120 @@
+<link rel="icon" href="https://live.staticflickr.com/65535/53048863405_40320fc55d_c.jpg" type="image/x-icon">
+<div>
+    {% extends "SorteoTique/inicio.html" %}
+    {% load static %}
+    
+        {% block contenidoQueCambia %}
+        <head>
+            <title>Sorteos|SorteoTique</title>
+        </head>
+
+        <link href="{% static 'SorteoTique/css/stylesVale.css' %}" rel="stylesheet"/>
+
+        <style>
+            .header {
+            
+              padding: 20px;
+              color: rgb(124, 154, 204);
+              text-align: center;
+            }
+          </style>
+          <body>
+            <div class="header">
+              <h1>6 sorteos diferentes</h1>
+            </div>
+          </body>
+
+
+
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card" style="width: 18rem; margin-left: 20px;"> 
+            <img src="https://images.ctfassets.net/q33z48p65a6w/3Ypdzzl17yWUS8Ya0cCCG/3c902e1baf9907f3ce5efe67d1ed42ef/iStock_000006841434_Large.jpg?fit=thumb&fm=webp&h=1280&q=70&w=1920" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Sorteo Gana Efectivo</h5>
+                    <p class="card-text" >Participa por la oportunidad de ganar hasta 1,000,000 dólares en efectivo.</p>
+                
+                     <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                         <a class="btn btn-secondary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="{% url 'getSeller' %}">Quiero buscar un asesor</a>
+                     </div>
+                </div>
+            </div>
+          </div>
+
+    
+
+          <div class="col-sm">
+            <div class="card" style="width: 18rem; margin-left: 20px;"> 
+            <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/homepod/ios14-homepod-ipad-iphone12-pro-watch-homekit-hero.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                     <h5 class="card-title">Sorteo iPremios</h5>
+                     <p class="card-text">Cambia tu celular, audífonos, computadora y más por los nuevos productos de Apple.</p>
+                     <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                         <a class="btn btn-secondary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="{% url 'getSeller' %}">Quiero buscar un asesor</a>
+                     </div>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm">
+            <div class="card" style="width: 18rem; margin-left: 20px;"> 
+            <img src="https://i.pinimg.com/564x/3c/bd/e0/3cbde0a346e4b6c6311f17bfc37df180.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Sorteo Aventura</h5>
+                    <p class="card-text">Vete de viaje durante un año con todos los gastos pagados, a donde tú quieras.</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                        <a class="btn btn-secondary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="{% url 'getSeller' %}">Quiero buscar un asesor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="col-sm">
+                <div class="card" style="width: 18rem; margin-left: 20px;"> 
+                <img src="https://observatorio.tec.mx/wp-content/uploads/2022/05/event-graduation-tassel-convocation-academic-dress-599260-pxhere.com_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sorteo Educativo</h5>
+                        <p class="card-text">Asegura tu educación universitaria o la de tus hijos teniéndo la oportunidad de estudiar en las mejores universidades del mundo.</p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                            <a class="btn btn-secondary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="{% url 'getSeller' %}">Quiero buscar un asesor</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card" style="width: 18rem; margin-left: 20px;"> 
+                <img src="https://images.ecestaticos.com/biN-8Gh2Tl2Xi6M77ozxFRoN5xI=/65x0:1186x834/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F05c%2F023%2Fb0d%2F05c023b0dd75cbbcda6c5c8b6a6bdabc.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sorteo Mi futuro</h5>
+                        <p class="card-text">Gana una mensualidad de 1,700 dlls al mes durante 20 años. O un cheque de 408,000. </p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                            <a class="btn btn-secondary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="{% url 'getSeller' %}">Quiero buscar un asesor</a>
+                         </div>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card" style="width: 18rem; margin-left: 20px;"> 
+                <img src="https://mx.askrobin.com/wp-content/uploads/2019/07/dinero-rapido.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sorteo Rápido</h5>
+                        <p class="card-text">Gana 5,000 dlls tan solo invirtiendo 5 dólares, ¡Este sorteo es cada semana!</p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                            <a class="btn btn-secondary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="{% url 'getSeller' %}">Quiero buscar un asesor</a>
+                         </div>
+                    </div>
+                 </div>
+            </div>
+        
+        </div>
+    </div>
+</body>        
+        {% endblock %}
+</div>
+
+

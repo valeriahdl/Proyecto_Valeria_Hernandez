@@ -1,0 +1,51 @@
+.navTextColor{
+    color:rgb(124,154,204) !important;
+}
+
+
+.contenido{
+    margin-top: 50px !important;
+    padding: 10px;
+}
+
+.componenteEntregables{
+    background-color: thistle;
+}
+
+#tableClients tr th{
+    padding-right: 120px;
+}
+#titleTbClients{
+    background-color: rgb(109,146,195) !important;
+    color: white;
+    border-radius: 3px;
+}
+.containerForm{
+    display: flex !important;
+    justify-content: right !important; /*center?*/
+    align-items: center !important;
+    position: absolute !important;
+    height: 100% !important;
+    width: 100% !important;
+    background-image: url("../assets/img/fondo_login.png"); 
+    background-size: contain; /* or cover*/
+    background-repeat: no-repeat;
+    box-shadow: 1px 40px 30px rgba(251, 243, 199, 0.64) , inset 0px 20px 500px 0px rgb(109,146,195,.7) ;
+
+}
+
+
+.padRight {
+
+    padding-right: 150px;
+}
+
+
+.inputLogin{
+
+    border-radius: 5px;
+    border: 1px solid rgb(124,154,204); 
+    border-style:solid;
+    width: 150px;
+    margin-bottom: 3px;
+}

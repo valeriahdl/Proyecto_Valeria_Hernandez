@@ -1,0 +1,26 @@
+<div>
+    {% extends "SorteoTique/clients.html" %}
+    {% load static %}
+    {% block contactClient %}
+    
+    <div class="mb-3">
+    <figure class="text-center">
+        <blockquote>
+        <form action="/SorteoTique/contactClient/" method="post"class="align-items-center"> {% csrf_token %}
+            <center>
+            <p class="lead">Por favor, escribe tus datos para contactarte:</p>
+            <div class="col-sm-5">
+            <input class="form-control" placeholder="Id del Cliente" type = "text" name="client_id" required>
+            <input class="form-control" placeholder="Nombre" type = "text" name="name" required>
+            <input class="form-control" placeholder="Apellido" type = "text" name="last_name" required>
+            <input class="form-control" placeholder="Email" type = "email" name="email" required><br><br>
+            </div>
+            <input class="btn btn-primary"type = "submit" value="Enviar">
+        </center>
+        </form>
+        </blockquote>
+    </figure>
+    </div>
+
+    {% endblock %}    
+</div>

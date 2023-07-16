@@ -1,0 +1,69 @@
+<link rel="icon" href="https://live.staticflickr.com/65535/53048863405_40320fc55d_c.jpg" type="image/x-icon">
+
+<div>
+    {% extends "SorteoTique/inicio.html" %}
+    {% load static %}
+    
+        {% block contenidoQueCambia %}
+        <head>
+                <title>Vendedores|SorteoTique</title>
+        </head>
+    </div><br>      
+
+    <head>
+        <style>
+            .container {
+                display: flex;
+            }
+            .text {
+                flex: 1;
+            }
+            .card {
+            flex: 1;
+            background-color: rgba(124, 153, 204, 0.156);
+            padding: 10px;
+        }
+            mark {
+                background-color:rgba(124, 153, 204, 0.5);
+                color: white;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="text">
+                <p class="display-6">¿Quieres formar parte de nuestro equipo?</p>
+                <p class="lead">Encuéntranos en redes sociales como <mark>@SorteoTique</mark> o escríbenos<br>
+                al correo: colabora@sorteotique.com</p><br>
+                <center>
+                <img src= "https://1.bp.blogspot.com/-Ol8djYxKbp8/YUIOw-frgGI/AAAAAAAAEBI/W1m_F0Yo15YIk4HP0tjOI6EZ_L05AdH4QCLcBGAsYHQ/s1200/la%2Bdiosa%2BFortuna.png" class="img-fluid" alt="..." width="300" height="200" >
+                </center>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                  <div class="card" style="width: 30rem; margin-left: 20px;"> 
+                    
+                        <divstyle = "width: 18rem;"> 
+                            <img src="https://www.adeccorientaempleo.com/wp-content/uploads/2019/04/Comercial-800x580.jpg" class="card-img-top" alt="..."  width="500" height="300">
+                            <div class="card-body" >
+                                <h5 class="display-6">Colaboradores</h5>
+                                <p class="lead">¿Quieres recibir asesoría se cómo obtener un boleto? ¿Tienes dudas generales sobre el sorteo? Acércate a nosotros para brindarte la mejor atención</p>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                                    <a class="btn btn-secondary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="{% url 'getSeller' %}">Buscar un vendedor</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div></div>
+
+        </div>
+    </body>
+
+            <div class="formGetSeller">
+                {% block getSeller %}
+                {% endblock %}
+            </div>  
+        {% endblock %}
+</div>
+

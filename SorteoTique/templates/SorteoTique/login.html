@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link href="{% static 'SorteoTique/css/stylesVale.css' %}" rel="stylesheet"/>
+    <link href="{% static 'SorteoTique/css/bootstrap.min.css' %}" rel="stylesheet"/>
+    <link rel="icon" href="https://live.staticflickr.com/65535/53048863405_40320fc55d_c.jpg" type="image/x-icon">
+    <title>Login | Sorteo Tique</title>
+</head>
+<body>
+   
+    <div class="containerForm"> 
+        <form action="" method="POST"> {% csrf_token %}
+            <!--h1 class="display-1" style ="margin-bottom: 30px; display: flex; justify-content: center; align-items: center;">Sorteo Tique</h1-->
+            <!--h3 class="display-4" style="color: black; font-weight:bold; margin-bottom: 30px; display: flex; justify-content: center; align-items: center;">Login</h3-->
+            <figure class="padRight">
+                <blockquote class="blockquote">
+                       <p class="display-6">Sorteo Tique Login</p>
+                       <p class="lead">Estás a solo<mark>un paso</mark>de la fortuna<br>
+                        </figure>
+            <figure class="text-center">
+            <div class="padRight">
+                <input name="user" type="text" placeholder="User" class="inputLogin">
+            </div>
+            <div class="padRight">
+                <input name="pwd" type="password" placeholder="Password" class="inputLogin">
+            </div><br>
+            <div class="padRight">
+                <button class="btn btn-warning" type="submit">Login</button>
+            </div>
+             </figure>
+            {% if error %}
+                <p style="color: rgb(108, 22, 22);">{{error}}</p>
+            {% endif %}
+            <p style="color: black;">¿Aún no tienes una cuenta? <a href="/SorteoTique/register">Registrate</a></p>
+        </form>
+    </div> 
+</body>
+</html>

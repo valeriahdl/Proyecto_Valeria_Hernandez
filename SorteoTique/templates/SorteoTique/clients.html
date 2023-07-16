@@ -1,0 +1,58 @@
+<link rel="icon" href="https://live.staticflickr.com/65535/53048863405_40320fc55d_c.jpg" type="image/x-icon">
+<div>
+    {% extends "SorteoTique/inicio.html" %}
+    {% load static %}
+    
+        {% block contenidoQueCambia %}
+<head>
+    
+    <title>Clientes|SorteoTique</title>
+</head>
+        <style>
+
+        .checklist {
+      font-family: Arial, sans-serif;
+        }
+        </style>
+<head>
+<div class="formContactClient">
+    {% block contactClient %}
+    {% endblock %}
+</div><br>      
+</head>
+<figure class="text-center">
+    <blockquote class="blockquote">
+           <p class="display-6">Clientes en espera para ser contactados:</p>
+           <p class="lead">Por favor, solo edita <mark>si hay algún error</mark>corroborado por el cliente <br>
+           Elimina si el cliente<mark> fue contactado.</mark></p><br>
+            </figure>
+        </blockquote>
+
+            <table class="table table-hover"  id= "tableClients">
+                <tr id="titleTbClients">
+                    <th>Id del Cliente</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email  </th> 
+                    <th>Eliminar</th>
+                    <th>Editar</th>
+                        
+                </tr>
+                
+                    {% for client in Clients%}
+                        <tr>
+                            <td>{{client.client_id}}</td>
+                            <td>{{client.name}}</td>
+                            <td>{{client.last_name}}</td>
+                            <td>{{client.email}} </td>
+                            <td><button type="button" class="btn btn-outline-danger "><a href="{% url 'deleteContactClient' client.name %}"> ✗ </a></button></td>                    
+                            <td><button type="button" class="btn btn-outline-info "><a href="{% url 'editClient' client.name %}"> edit </a></button></td>                    
+                        </tr>
+                    {% endfor %}
+                    
+            </table>
+            <br><br><br><br><br><br>
+                
+        
+        {% endblock %}
+</div>

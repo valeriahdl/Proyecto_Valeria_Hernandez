@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link href="{% static 'SorteoTique/css/stylesVale.css' %}" rel="stylesheet"/>
+    <link href="{% static 'SorteoTique/css/bootstrap.min.css' %}" rel="stylesheet"/>
+    <link rel="icon" href="https://live.staticflickr.com/65535/53048863405_40320fc55d_c.jpg" type="image/x-icon">
+    <title>Registro | Sorteo Tique</title>
+</head>
+<body>
+   
+    <div class="containerForm"> 
+        <form action="" method="POST"> {% csrf_token %}
+            <figure class="padRight">
+                <blockquote class="blockquote">
+                       <p class="display-6">Sorteo Tique Registro</p>
+                       <p class="lead">Estás a solo<mark>un paso</mark>de la fortuna, regístrate<br>
+                        </figure>
+            <figure class="text-center">
+            <div class="padRight">
+                <input name="username" type="text" placeholder="Usuario" class="inputLogin">
+            </div>
+            <div class="padRight">
+                <input name="pwd1" type="password" placeholder="Contraseña" class="inputLogin">
+            </div>
+            <div class="padRight">
+                <input name="pwd2" type="password" placeholder="Confirmación contraseña" class="inputLogin">
+            </div><br>
+            <div class="padRight">
+                <button class="btn btn-warning" type="submit">Registro</button>
+            </div>
+             </figure>
+
+            <p style="color: black;">¿Ya tienes una cuenta? <a href="/SorteoTique/login">Ingresa aquí</a></p>
+        </form>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,23 @@
+<div>
+    {% extends "SorteoTique/inicio.html" %}
+    {% load static %}
+    
+        {% block contenidoQueCambia %}
+        <center>
+        <div style="width: 40rem;"> 
+ 
+            <p>Por favor toma en cuenta que nuestros colaboradores se dividen en 8 regiones:</p>
+                
+            <h4>Noroeste, Noreste, Occidente, Oriente <br>
+                Centronorte, Centrosur, Suroeste, Sureste <br></h4>
+        </div>
+        </div>
+        
+        <div class="formGetSeller">
+            {% block getSeller %}
+            {% endblock %}
+        </div>  
+        </center>
+        {% endblock %}
+</div>
+

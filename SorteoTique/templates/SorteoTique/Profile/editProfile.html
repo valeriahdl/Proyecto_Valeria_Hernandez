@@ -1,0 +1,25 @@
+{% extends "../inicio.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+<head>
+    <link rel="icon" href="https://live.staticflickr.com/65535/53048863405_40320fc55d_c.jpg" type="image/x-icon">
+        <title>Editar|SorteoTique</title>
+</head>
+<h3 class="display-6">Editar Perfil</h3>
+<h6>{{user.username}}</h6>
+
+<form method="POST"> {% csrf_token %}
+    <table class="table table-hover">
+        <tr id="titleTbClients">           
+        <!--{{ form.as_table }}-->
+        <th>Usuario: {{ form.username }}</th>
+        <th>Email: {{ form.email }}</th>
+        <th>Nombre: {{ form.first_name }}</th>
+        <th>Apellido: {{ form.last_name }}</th> 
+        </tr>
+    </table>
+    <input type="submit" value="Editar perfil" button type="button" class="btn btn-outline-info ">
+</form>
+<br>
+<a href="/SorteoTique/Profile/changePassword" class="navTextColor">Cambiar contraseña</a>
+{% endblock %}

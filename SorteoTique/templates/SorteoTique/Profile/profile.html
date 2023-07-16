@@ -1,0 +1,19 @@
+{% extends "../inicio.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+<head>
+    <link rel="icon" href="https://live.staticflickr.com/65535/53048863405_40320fc55d_c.jpg" type="image/x-icon">
+        <title>Perfil|SorteoTique</title>
+</head>
+    <div>
+        <ul>
+            <li>{{user.username}}</li>
+            <li>{{user.email}}</li>
+            <li>{{user.first_name}}</li>
+            <li>{{user.last_name}}</li>
+        </ul>
+        <a href="/SorteoTique/Profile/editProfile" class="btn btn-success" style="text-decoration: none; color: white;"> Editar Perfil</a>
+        <a href="/SorteoTique/Profile/changeAvatar" class="btn btn-success" style="text-decoration: none; color: white;"> Avatar</a>
+    </div>
+{% endblock %}
